@@ -1,0 +1,125 @@
+/* Spa-Like Theme */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #d5f3e5, #ffffff);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .spa-header {
+    background-color: #82c9a1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .spa-header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .routine-list ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .routine-list li {
+    background: #f9fff7; /* Soft background color */
+    margin: 10px 0; /* Spacing between tasks */
+    padding: 15px 20px; /* Padding inside the task box */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 0.8rem; /* Font size for tasks (adjust as needed) */
+    font-family: 'Roboto', sans-serif; /* Change font style (Roboto as an example) */
+    color: #333; /* Dark text color for readability */
+    display: flex; /* Align items for buttons or icons */
+    justify-content: space-between; /* Space between text and buttons */
+    align-items: center; /* Align vertically in the center */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #82c9a1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #6eb18d;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  /* Add animation to the title */
+@keyframes fadeSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .spa-header h1 {
+    animation: fadeSlide 1.5s ease-in-out;
+  }
+  
+  /* Enhanced title style */
+.spa-header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Bigger font size */
+    animation: fadeSlide 1.5s ease-in-out;
+    color: #ffffff; /* White text for contrast */
+    background: linear-gradient(to right, #82c9a1, #6eb18d, #82c9a1); /* Gradient background */
+    padding: 15px 20px; /* Add padding around the text */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    display: inline-block; /* Make it an inline block to adjust size */
+    text-transform: uppercase; /* Make the text uppercase for emphasis */
+    letter-spacing: 2px; /* Slightly increase spacing between letters */
+  }
+  
+  /* Optional: Add a glowing effect on hover */
+  .spa-header h1:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 15px #82c9a1;
+    transform: scale(1.05); /* Slightly enlarge the title on hover */
+    transition: all 0.3s ease-in-out; /* Smooth hover animation */
+  }
+  
+  /* Glowing effect */
+@keyframes glow {
+    0% {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 15px #82c9a1;
+    }
+    100% {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* Apply glowing animation to the title */
+  .spa-header h1 {
+    animation: fadeSlide 1.5s ease-in-out, glow 2s infinite ease-in-out;
+  }
+  
